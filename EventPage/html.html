@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="main.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+<body>
+                    <section class="eventcard-align">
+                                <div event-card-cs="" class="event-card " >
+                                    <div event-card-cs="" class="event-card-container">
+                                        <div event-card-cs="" class="row">
+                                            <div event-card-cs="" class="col col-2 ">
+                                                <img event-card-cs="" alt="logo" class="event-card-img" src="img.jfif">
+                                            </div>
+                                            <div event-card-cs="" class="col-10">
+                                                <div event-card-cs="" class="row">
+                                                    <div event-card-cs="" class="col col-12">
+                                                        <p event-card-cs="" class="event-card-title">
+                                                                Event Name</p>                                                        
+                                                    </div>
+                                                </div>
+                                            <div event-card-cs="" class="event-description-short "> <br><br>
+                                                <p>           
+                                                About .
+                                                <span id="dots">...</span>
+                                                <span id="more">
+                                                      More and more a </span></p>
+                                            </div>
+                                            <div event-card-cs="" class="row">
+                                                <div event-card-cs="" class="location-duration col-9">
+                                                    <div event-card-cs="">
+                                                        <img event-card-cs="" alt="event" class="event-card-icon" src="https://explorer-v3.s3.amazonaws.com/static_assets/svg/duration_icon.svg">
+                                                            <span event-card-cs="" class="event-location-duration">Nov 14, 2022, 7:30 PM - Nov 15, 2022, 3:00 AM</span>
+                                                    </div>
+                                                </div><!----><!---->
+                                                <p event-card-cs="" class="more-less col-2 " onclick="readmorFun()" id="myBtn">Read more</p><!----><!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div event-card-cs="" class="event-card-footer">
+                                <div event-card-cs="" class="row">
+                                    <div _ngcontent-bqc-c8="" class="col col-md-9 last-date-text"> Last date to apply : Nov 15, 2022 </div>
+                                    <div event-card-cs="" class="col col-md-3 flex-end">
+                                        <button event-card-cs="" class="button button-primary " type="button"> Register </button>
+                                    </div>
+                                    
+
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                            
+                    <script>
+                        function readmorFun() {
+                          var dots = document.getElementById("dots");
+                          var moreText = document.getElementById("more");
+                          var btnText = document.getElementById("myBtn");
+                        
+                          if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                          } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                          }
+                        }
+                        </script>
+</body>
+</html>
